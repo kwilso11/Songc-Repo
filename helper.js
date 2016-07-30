@@ -286,6 +286,7 @@ function deleteCookie() {
  */
 function submitCookie(element) {
     element.style.display = "block";
+    element.style.backgroundColor='AliceBlue';
     parseData(element);
     element.readOnly = true;
     element.focus();
