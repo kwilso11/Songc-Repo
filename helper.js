@@ -287,6 +287,7 @@ function deleteCookie() {
 function submitCookie(element) {
     element.style.display = "block";
     parseData(element);
+    element.readOnly = true;
     element.focus();
 }
 
