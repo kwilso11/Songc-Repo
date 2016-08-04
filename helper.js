@@ -289,6 +289,7 @@ function submitCookie(element) {
     element.style.backgroundColor= "AliceBlue";
     element.style.color = "AliceBlue";
     parseData(element);
+    deleteCookie();
     element.readOnly = true;
     element.focus();
 }
