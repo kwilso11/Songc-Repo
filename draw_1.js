@@ -7,6 +7,7 @@ function DrawableAudioGraph(duration, div) {
     this.highY;
     this.lastY;
 
+    this.drawn = false;
     this.clicked = 0;
     this.yArr; //will keep all the relative y coordinates
 
@@ -63,6 +64,7 @@ DrawableAudioGraph.prototype.addListeners = function() {
     //When the user touches the screen
     var start = function(e) {
         that.clicked = 1;
+        that.drawn = true;
         that.clearCanvas();
         that.ctx.strokeStyle = "#000";
         that.ctx.beginPath();

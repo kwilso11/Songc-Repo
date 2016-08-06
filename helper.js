@@ -107,7 +107,7 @@ function addDrawableAudioGraph(expression, duration, div) {
     button.className = "PlayButton";
     button.style.display = 'block';
     button.onclick = function() { // Note this is a function
-        if (!playing) {
+        if (!playing && drawableAudioGraph.drawn) {
             playing = 1;
             document.getElementById("draw"+expression).className = "PlayButtonDeactivated";
             drawableAudioGraph.audioGraph.play(3);
