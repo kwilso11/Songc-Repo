@@ -135,7 +135,8 @@ AudioGraph.prototype.pan = function(duration){
 AudioGraph.prototype.getValues = function(filename){
     var object = this;
     $.ajax({
-        url: "https://rawgithub.com/kwilso11/Songc-Repo/master/" + filename + ".json",
+        url: "https://raw.githubusercontent.com/kwilso11/Songc-Repo/master/" + filename + ".json",
+        contentType: "text/plain",
         dataType: 'jsonp'
     });
 }
